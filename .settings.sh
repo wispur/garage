@@ -4,7 +4,7 @@
 ##### alias settings  ######
 # general
 if [[ ${HOSTNAME:0:10} != "MBA-Wispur" ]]; then # mac pain...
-	alias ls='ls -G'
+	alias ls='ls -G --color'
 fi
 alias l='ls -CF'
 alias la='ls -A'

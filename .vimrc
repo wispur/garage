@@ -29,4 +29,7 @@ hi LineNr ctermfg=lightgray
 hi Title ctermfg=10
 "hi operator ctermfg=white
 "match operator /[-+=[](){}]/
+hi xmlTag ctermfg=magenta
+hi xmlTagName ctermfg=magenta
+hi xmlEndTag ctermfg=magenta
 

@@ -62,5 +62,9 @@ fi
 # set prompt colors
 export PS1="\[\033[36m\]\u\[\033[37m\]@\[\033[36m\]\h\[\[\033[37m\]:\[\033[35m\]\w\[\033[37m\]\$ \[\033[m\]"
 
+# ssh
+alias sshtest='ssh joe@test.ibeengo.com'
+
 # postgres
-alias startpostgres='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'
+alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
+

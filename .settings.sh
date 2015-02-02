@@ -64,6 +64,7 @@ export PS1="\[\033[36m\]\u\[\033[37m\]@\[\033[36m\]\h\[\[\033[37m\]:\[\033[35m\]
 
 # ssh
 alias sshtest='ssh joe@test.ibeengo.com'
+alias sshdeploy='ssh deploy@ibeengo.com'
 
 # postgres
 alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'

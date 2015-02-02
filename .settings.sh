@@ -53,7 +53,7 @@ if [[ ${HOSTNAME:0:10} = "MBA-Wispur" ]]; then
 	export PYTHON_PATH='/usr/local/lib/python2.7/site-packages/django:$PYTHON_PATH'
 	export PYTHONPATH='/usr/local/lib/python2.7/site-packages:$PYTHONPATH'
 	# paths
-	alias cdwo='cd /Users/joe/Workspace'
+	alias cdwo='cd /Users/joe/Workspace/ibeengo'
 	alias checkport='lsof -i :8080'
 	alias diff='/Applications/DiffMerge.app/Contents/MacOS/DiffMerge'
 	ssh-add ~/.ssh/joeOSX
@@ -61,3 +61,6 @@ fi
 
 # set prompt colors
 export PS1="\[\033[36m\]\u\[\033[37m\]@\[\033[36m\]\h\[\[\033[37m\]:\[\033[35m\]\w\[\033[37m\]\$ \[\033[m\]"
+
+# postgres
+alias startpostgres='launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist'

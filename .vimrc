@@ -32,4 +32,6 @@ hi Title ctermfg=10
 hi xmlTag ctermfg=magenta
 hi xmlTagName ctermfg=magenta
 hi xmlEndTag ctermfg=magenta
-
+hi htmlTag ctermfg=magenta
+hi htmlTagName ctermfg=magenta
+hi erubyDelimiter ctermfg=14 "cyan

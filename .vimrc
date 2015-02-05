@@ -38,3 +38,4 @@ hi erubyDelimiter ctermfg=14 "cyan
 hi NonText ctermfg=8 "dark gray
 hi SpecialKey ctermfg=8 "dark gray
 set list
+hi CursorLine ctermbg=54 "dark purple

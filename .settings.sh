@@ -29,9 +29,12 @@ alias gits='git status'
 alias gita='git add'
 alias gitc='git commit -m'
 alias gitd='git diff'
+alias gitdc='gitd --cached'
 alias viconf='vi wp-config.php'
-alias apache='sudo service apache2'
-alias nginx='sudo service nginx'
+if [[ ${HOSTNAME:0:10} != "MBA-Wispur" ]]; then # mac pain...
+  alias apache='sudo service apache2'
+  alias nginx='sudo service nginx'
+fi
 alias resapa='apache restart'
 alias lamp='sudo /opt/lampp/lampp'
 alias ressam='sudo restart smbd && sudo restart nmbd'
@@ -56,16 +59,19 @@ if [[ ${HOSTNAME:0:10} = "MBA-Wispur" ]]; then
 	alias cdwo='cd /Users/joe/Workspace/ibeengo'
 	alias checkport='lsof -i :8080'
 	alias diff='/Applications/DiffMerge.app/Contents/MacOS/DiffMerge'
-	ssh-add ~/.ssh/joeOSX
+	# terminal title
+	function title {
+	  printf "\033]0;%s\007" "$1"
+	}
+	# postgres
+	alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
 fi
 
 # set prompt colors
 export PS1="\[\033[36m\]\u\[\033[37m\]@\[\033[36m\]\h\[\[\033[37m\]:\[\033[35m\]\w\[\033[37m\]\$ \[\033[m\]"
 
 # ssh
-alias sshtest='ssh joe@test.ibeengo.com'
+alias sshtest='ssh deploy@test.ibeengo.com'
 alias sshdeploy='ssh deploy@ibeengo.com'
 
-# postgres
-alias pg='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log'
 

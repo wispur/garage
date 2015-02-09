@@ -5,6 +5,7 @@ set number					"line number
 set autoindent
 set tabstop=4
 set softtabstop=4
+set shiftwidth=4
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 autocmd Filetype python setlocal expandtab      "expand tab only for python
 set hlsearch				"highlight search
